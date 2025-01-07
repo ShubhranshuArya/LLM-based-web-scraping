@@ -1,1 +1,1 @@
-![LLMScraping](https://github.com/user-attachments/assets/7f265d38-b706-400a-936e-33d53a9667e8)
+![LLMScraping_cropped](https://github.com/user-attachments/assets/f3894a33-483a-430b-9b90-a54419d0aaf7)
