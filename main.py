@@ -1,7 +1,7 @@
 import streamlit as st
 from scraper import (
     extract_body_content,
-    website_scraper,
+    scrape_website_with_sbr,
     clean_body_content,
     chunk_cleaned_content,
 )
@@ -12,7 +12,7 @@ st.title("Web Scraping with LLMs")
 url = st.text_input("Paste the URL of the website:")
 
 if st.button("Scrape it"):
-    result = website_scraper(url)
+    result = scrape_website_with_sbr(url)
     body_content = extract_body_content(result)
     clean_content = clean_body_content(body_content)
 
@@ -27,7 +27,7 @@ if st.button("Scrape it"):
         )
 
 if "dom_content" in st.session_state:
-    parse_description = st.text("Describe what you want from the website?")
+    parse_description = st.text_area("Describe what you want from the website?")
 
     if st.button("Parse Content:"):
         if parse_description:

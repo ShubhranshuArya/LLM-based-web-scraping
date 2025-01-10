@@ -1,28 +1,54 @@
+from selenium.webdriver import Remote, ChromeOptions
+from selenium.webdriver.chromium.remote_connection import ChromiumRemoteConnection
 from bs4 import BeautifulSoup
-import selenium.webdriver as webdriver
-from selenium.webdriver.chrome.service import Service
-import time
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+AUTH = os.getenv("AUTH")
+SBR_WEBDRIVER = f"https://{AUTH}@brd.superproxy.io:9515"
 
 
-def website_scraper(website_url):
-    print("Connecting to Chrome...")
-
-    chrome_driver_path = "./chromedriver"
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
-
-    try:
-        driver.get(website_url)
-        print("Loading website...")
+def scrape_website_with_sbr(website):
+    print("Connecting to Scraping Browser...")
+    print(SBR_WEBDRIVER)
+    sbr_connection = ChromiumRemoteConnection(SBR_WEBDRIVER, "goog", "chrome")
+    with Remote(sbr_connection, options=ChromeOptions()) as driver:
+        driver.get(website)
+        print("Waiting captcha to solve...")
+        solve_res = driver.execute(
+            "executeCdpCommand",
+            {
+                "cmd": "Captcha.waitForSolve",
+                "params": {"detectTimeout": 10000},
+            },
+        )
+        print("Captcha solve status:", solve_res["value"]["status"])
+        print("Navigated! Scraping page content...")
         html = driver.page_source
-        time.sleep(10)
-
         return html
 
-    except Exception as e:
-        print(f"Error: {e}")
-        driver.quit()
-        return
+
+# def scrape_website_with_chromedriver(website_url):
+#     print("Connecting to Chrome...")
+
+#     chrome_driver_path = "./chromedriver"
+#     options = webdriver.ChromeOptions()
+#     driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
+
+#     try:
+#         driver.get(website_url)
+#         print("Loading website...")
+#         html = driver.page_source
+#         time.sleep(10)
+
+#         return html
+
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         driver.quit()
+#         return
 
 
 def extract_body_content(html):
