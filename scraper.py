@@ -12,7 +12,6 @@ SBR_WEBDRIVER = f"https://{AUTH}@brd.superproxy.io:9515"
 
 def scrape_website_with_sbr(website):
     print("Connecting to Scraping Browser...")
-    print(SBR_WEBDRIVER)
     sbr_connection = ChromiumRemoteConnection(SBR_WEBDRIVER, "goog", "chrome")
     with Remote(sbr_connection, options=ChromeOptions()) as driver:
         driver.get(website)
