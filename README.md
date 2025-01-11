@@ -9,30 +9,28 @@
 
 ## Table of Contents
 
-- [ Overview](#-overview)
-- [ Features](#-features)
+- [ What does this app do?](#-overview)
+- [ App Features](#-app-features)
 - [ Project Structure](#-project-structure)
   - [ Project Index](#-project-index)
-- [ Getting Started](#-getting-started)
+- [ Run The Project](#-run-the-project)
   - [ Prerequisites](#-prerequisites)
   - [ Installation](#-installation)
   - [ Usage](#-usage)
   - [ Testing](#-testing)
-- [ Project Roadmap](#-project-roadmap)
+- [ Future Work](#-future-work)
 - [ Contributing](#-contributing)
-- [ License](#-license)
-- [ Acknowledgments](#-acknowledgments)
 
 </details>
 <hr>
 
-## Overview
+## What Does This App Do?
 
 LLM-based web scraping revolutionizes the way scraping works. It utilizes the Ollama 3.1 language model for precise data extraction. Its core features include efficient HTML content processing and accurate information retrieval. Ideal for developers seeking streamlined web scraping and content parsing, this project enhances user experience and boosts productivity.
 
 ---
 
-## Features
+## App Features
 
 |     |      Feature      | Summary                                                                                                                                                                                                                                                                                                                                                                                          |
 | :-- | :---------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,38 +57,9 @@ LLM-based web scraping revolutionizes the way scraping works. It utilizes the Ol
     └── scraper.py
 ```
 
-### Project Index
-
-<details open>
-    <summary><b><code>LLM-BASED-WEB-SCRAPING/</code></b></summary>
-    <details> <!-- __root__ Submodule -->
-        <summary><b>__root__</b></summary>
-        <blockquote>
-            <table>
-            <tr>
-                <td><b><a href='https://github.com/ShubhranshuArya/LLM-based-web-scraping/blob/master/scraper.py'>scraper.py</a></b></td>
-                <td>Enables web scraping with Scraping Browser, extracting and cleaning HTML body content in chunks for efficient processing within the project architecture.</td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/ShubhranshuArya/LLM-based-web-scraping/blob/master/requirements.txt'>requirements.txt</a></b></td>
-                <td>Enables web scraping and data extraction functionalities for the project by specifying required Python packages in the 'requirements.txt' file.</td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/ShubhranshuArya/LLM-based-web-scraping/blob/master/parse.py'>parse.py</a></b></td>
-                <td>- The `parse.py` file defines a function that uses the Ollama language model to extract specific information from text content based on provided descriptions<br>- It processes text chunks, matches descriptions, and returns extracted data<br>- This code plays a crucial role in the project's architecture by enabling accurate information extraction using the OllamaLLM model.</td>
-            </tr>
-            <tr>
-                <td><b><a href='https://github.com/ShubhranshuArya/LLM-based-web-scraping/blob/master/main.py'>main.py</a></b></td>
-                <td>- Enables web scraping and content parsing within a Streamlit app<br>- Facilitates extracting, cleaning, and parsing website content based on user input URL and description<br>- Supports interactive exploration of scraped content sections<br>- Enhances user experience by displaying parsed results for further analysis.</td>
-            </tr>
-            </table>
-        </blockquote>
-    </details>
-</details>
-
 ---
 
-## Getting Started
+## Run The Project
 
 ### Prerequisites
 
@@ -145,11 +114,9 @@ Run the test suite using the following command:
 
 ---
 
-## Project Roadmap
+## Future Work
 
-- [x] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- List things that can be done in future.
 
 ---
 
@@ -193,17 +160,5 @@ Run the test suite using the following command:
    </a>
 </p>
 </details>
-
----
-
-## License
-
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
-
----
-
-## Acknowledgments
-
-- List any resources, contributors, inspiration, etc. here.
 
 ---
