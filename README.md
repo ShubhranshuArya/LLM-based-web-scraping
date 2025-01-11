@@ -1,25 +1,13 @@
-<p align="left">
-    <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="left" width="30%">
-</p>
-<p align="left"><h1 align="left">LLM-BASED-WEB-SCRAPING</h1></p>
-<p align="left">
-    <em>Unleash web data with precision and speed.</em>
-</p>
-<p align="left">
+![LLMScraping_cropped](https://github.com/user-attachments/assets/94391e37-6d54-4e26-b865-996c6a227128)
+
+<p align="center">
     <img src="https://img.shields.io/github/license/ShubhranshuArya/LLM-based-web-scraping?style=flat&logo=opensourceinitiative&logoColor=white&color=FFD21E" alt="license">
     <img src="https://img.shields.io/github/last-commit/ShubhranshuArya/LLM-based-web-scraping?style=flat&logo=git&logoColor=white&color=FFD21E" alt="last-commit">
     <img src="https://img.shields.io/github/languages/top/ShubhranshuArya/LLM-based-web-scraping?style=flat&color=FFD21E" alt="repo-top-language">
     <img src="https://img.shields.io/github/languages/count/ShubhranshuArya/LLM-based-web-scraping?style=flat&color=FFD21E" alt="repo-language-count">
 </p>
-<p align="left">Built with the tools and technologies:</p>
-<p align="left">
-    <img src="https://img.shields.io/badge/Streamlit-FF4B4B.svg?style=flat&logo=Streamlit&logoColor=white" alt="Streamlit">
-    <img src="https://img.shields.io/badge/Selenium-43B02A.svg?style=flat&logo=Selenium&logoColor=white" alt="Selenium">
-    <img src="https://img.shields.io/badge/Python-3776AB.svg?style=flat&logo=Python&logoColor=white" alt="Python">
-</p>
-<br>
 
-<details><summary>Table of Contents</summary>
+## Table of Contents
 
 - [ Overview](#-overview)
 - [ Features](#-features)
@@ -40,7 +28,7 @@
 
 ## Overview
 
-The LLM-based-web-scraping project revolutionizes web scraping by utilizing the Ollama language model for precise data extraction. Its core features include efficient HTML content processing and accurate information retrieval. Ideal for developers seeking streamlined web scraping and content parsing, this project enhances user experience and boosts productivity.
+LLM-based web scraping revolutionizes the way scraping works. It utilizes the Ollama 3.1 language model for precise data extraction. Its core features include efficient HTML content processing and accurate information retrieval. Ideal for developers seeking streamlined web scraping and content parsing, this project enhances user experience and boosts productivity.
 
 ---
 
