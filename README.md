@@ -12,12 +12,7 @@
 - [ What Does This App Do?](#-overview)
 - [ App Features](#-app-features)
 - [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
 - [ Run The Project](#-run-the-project)
-  - [ Prerequisites](#-prerequisites)
-  - [ Installation](#-installation)
-  - [ Usage](#-usage)
-  - [ Testing](#-testing)
 - [ Future Work](#-future-work)
 - [ Contributing](#-contributing)
 
@@ -118,7 +113,9 @@ streamlit run main.py
 
 ## Future Work
 
-- List things that can be done in future.
+- Convert it into a chatbot to converse with the parsed information.
+- Add specialized prompts to improve parsing for specific data.
+- Export parsed content. (CSV, .xlsx, etc)
 
 ---
 
